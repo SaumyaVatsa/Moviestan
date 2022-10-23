@@ -1,0 +1,293 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #051367;
+    color: #fff;
+}
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+hr{
+    width: 450px;
+    height: 2px;
+    background-color: #DFF6FF;
+}
+
+.container{
+    width: 100%;
+    align-items: center;
+    margin: auto;
+}
+
+
+.title{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 10px 20px;
+    align-items: center;
+
+}
+
+.title h2{
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+
+
+/* Nav */
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: 15px 0;
+    height: 60px;
+    font-size: 13px;
+}
+
+.logo{
+    cursor:  pointer;
+    color: #DFF6FF;
+    font-size:50px ;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.main-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    margin-top: 10px;
+}
+
+.main-menu li{
+    padding: 0 30px;
+}
+
+.main-menu li a{
+    padding-bottom: 2px;
+}
+
+.main-menu li a:hover{
+    color: #DFF6FF;
+    border-bottom: 2px solid #DFF6FF;
+}
+
+.main-menu li .sort{
+    position: relative;
+    display: inline-block;
+}
+
+.main-menu li .sort .dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: black;
+    opacity: 0.8;
+    min-width: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    z-index: 1;
+}
+
+
+.main-menu li .sort .dropdown-menu a:hover{
+    border: none;
+}
+
+.main-menu li .sort .dropdown-menu:hover{
+    color:#DFF6FF;
+}
+
+.main-menu li .sort:hover .dropdown-menu {
+    display: block;
+}
+
+.main-menu li .sort:hover .sortbtn{
+    background-color: transparent;
+}
+
+.main-menu li .sortbtn{
+    background-color: #051367;
+    color: #fff;
+    border: 0;
+    padding: 10px;
+}
+
+.main-menu li .sortbtn:hover{
+    color: #DFF6FF;
+    cursor: pointer;
+
+}
+
+.nav form .right-menu{
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin-top: 10px;
+}
+
+.nav form .right-menu li{
+    padding: 0 5px;
+}
+
+.nav form .right-menu li .searchbar::placeholder{
+    color: #051367;
+    padding: 10px;
+}
+
+.nav form .right-menu li .searchbar{
+    background-color: #DFF6FF;
+    opacity: 0.8;
+    color: #051367;
+    border: 3px solid black;
+    width: 150px;
+    height: 30px;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.nav form .right-menu li button{
+    background-color: transparent;
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+    border: 0;
+}
+
+.nav form .right-menu li button:hover{
+    border: 2px solid black;
+}
+
+
+/* Showcase */
+
+.showcase{
+    width: 100%;
+    height: 600px;
+    background: url("images/headerShowcase.jpg") no-repeat center center/cover;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom:180px;
+    margin-bottom: 20px;
+}
+
+.showcase h1{
+    color: #2D31FA;
+    margin-bottom: 10px;
+    font-size: 8rem;
+    border-bottom: 4px solid #DFF6FF;
+}
+
+.showcase p{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+/* Cards */
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 30px 20px;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+.cards div{
+    height: 250px;
+    width: 300px;
+    background-color: transparent;
+    color: #DFF6FF;
+    text-align: center;
+    padding: 20px 10px;
+    padding-top: 100px;
+    border: 2px solid #DFF6FF;
+    border-radius: 25px;
+    
+}
+
+.cards div:hover{
+    background-color: #DFF6FF;
+    color: #051367;
+    border-color: black ;
+}
+
+.cards div h3{
+    font-size: 2rem;
+}
+
+
+
+/* Artist */
+.artist{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 30px 20px;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.artist img{
+    border: 2px solid black;
+    border-radius: 100px;
+    height: 250px;
+    width: 250px;
+}
+
+/* Social Handles */
+
+.title .social-title{
+    align-items: center;
+    font-size: 2rem;
+}
+
+.social{
+    margin: 0 600px 10px;
+    padding: 10px 50px;
+}
+
+.social a img{
+    margin: 0 10px;
+    height: 50px;
+    width: 50px;
+}
+
+
+/* Footer */
+footer{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #DFF6FF;
+    color: #051367;
+    text-align: center;
+}
+
+footer p{
+    font-size: 20px;
+    font-weight: bold;
+}

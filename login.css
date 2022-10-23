@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #051367;
+    color: #fff;
+}
+
+.container{
+    width: 97%;
+    margin: auto;
+    text-align: center;
+}
+
+/* Nav Bar */
+nav{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.logo{
+    cursor: pointer;
+    color: #DFF6FF;
+    font-size: 3rem;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li{
+    padding: 0 30px;
+}
+
+.menu li a{
+    padding-bottom: 2px;
+}
+
+.menu li a:hover{
+    color: #DFF6FF;
+    border-bottom: 2px solid #DFF6FF;
+}
+
+/* Showcase Login */
+.login-showcase{
+    margin: 20px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+}
+
+#slider{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#slider .slide{
+    position: absolute;
+    transition: 1s;
+}
+
+.showcase{
+    border-radius: 10px;
+    width: 100%;
+    height: 400px;
+}
+
+.login{
+    height: 400px;
+    border: 4px solid black;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 20px;
+}
