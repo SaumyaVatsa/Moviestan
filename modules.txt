@@ -1,4 +1,0 @@
-1. Searching
-2. Review
-3. Video Player
-4. Animation 

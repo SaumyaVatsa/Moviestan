@@ -60,34 +60,83 @@ nav{
 
 /* Showcase Login */
 .login-showcase{
-    margin: 20px;
-    margin-top: 50px;
+    margin: 10px;
+    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 10px;
 }
 
-#slider{
-    position: relative;
-    overflow: hidden;
-    
-}
-
-#slider .slide{
-    position: absolute;
-    transition: 1s;
-}
-
-.showcase{
-    border-radius: 10px;
-    width: 100%;
+.showcase img{
     height: 400px;
+    width: 95%;
+    border-radius: 10px;
 }
 
 .login{
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 30px;
+    font-size: 1.6rem;
+    font-weight:200;
     height: 400px;
-    border: 4px solid black;
+    text-align: left;
+}
+
+.login label{
+    margin-left: 10px;
+}
+
+.login input{
+    border-radius: 5px;
+    margin: 15px 50px;
+    width: 85%;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.username-alert{
+    font-size: 15px;
+    color: red;
+    display: none;
+}
+
+.password-alert{
+    font-size: 15px;
+    color: red;
+    display: none;
+}
+
+.login a{
+    margin-left: 10px;
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 2px;
+    border-bottom: 2px solid;
+}
+
+.login a:hover{
+    color: #DFF6FF;
+    border-bottom: none;
+}
+
+.login #login-btn{
+    margin-top: 15px;
+    margin-left: 200px;
+    width: 40%;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #DFF6FF;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
     border-radius: 10px;
-    font-size: 1.5rem;
-    padding: 20px;
+    color: #051367;
+}
+
+.login #login-btn:hover{
+    color: #DFF6FF;
+    background-color: #000;
 }

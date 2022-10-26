@@ -20,28 +20,27 @@
 
         <!-- Showcase Login -->
         <div class="login-showcase">
-            <div id="slider">
-                <img src="Images/caraousel1.jpg" alt="Moviestan Login Image" class="showcase slide">
-                <img src="Images/caraousel2.jpg" alt="Moviestan Login Image" class="showcase slide">
-                <img src="Images/carousel3.jpg" alt="Moviestan Login Image" class="showcase slide">    
-                <img src="Images/caraousel4.jpg" alt="Moviestan Login Image" class="showcase slide">   
-                <img src="Images/carousel5.jpg" alt="Moviestan Login Image" class="showcase slide">
+            <div class="showcase">
+                <img src="Images/caraousel1.jpg" alt="Caraousel" id="slider">
             </div>
-            <form action="#" method="post" class="login">
+            <form action="#" method="post" class="login" onsubmit="return loginValid();">
                 <label for="Username">UserName: </label>
                 <br>
-                <input type="text" name="username" placeholder="Username">
+                <p class="username-alert">Username must contain alphabets and numbers and should not exceed 15 characters</p>
+                <input type="text" id="username" placeholder="Username" required>
                 <br>
                 <label for="Password">Password: </label>
                 <br>
-                <input type="password" name="password" placeholder="Password">
+                <p class="password-alert">Password must contain alphabets and numbers and should be between 8-16 characters</p>
+                <input type="password" id="password" placeholder="Password" required>
                 <br>
-                <p>Not a User? <a href="#">Sign Up</a></p>
+                <a href="#">Not a User? Sign Up</a>
                 <br>
-                <button type="submit" value="login">Log In</button>
+                <input type="submit" value="login" id="login-btn">
             </form>
+            
         </div>
     </div>
-    <script src="Javascript/app.js"></script>
+    <script src="Javascript/login.js"></script>
 </body>
 </html>
