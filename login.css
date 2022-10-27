@@ -73,6 +73,8 @@ nav{
     border-radius: 10px;
 }
 
+/* Login Section */
+
 .login{
     border: 3px solid black;
     border-radius: 5px;
@@ -109,7 +111,7 @@ nav{
     display: none;
 }
 
-.login a{
+.sec-link{
     margin-left: 10px;
     color: #000;
     font-size: 20px;
@@ -117,7 +119,7 @@ nav{
     border-bottom: 2px solid;
 }
 
-.login a:hover{
+.sec-link:hover{
     color: #DFF6FF;
     border-bottom: none;
 }
@@ -137,6 +139,78 @@ nav{
 }
 
 .login #login-btn:hover{
+    color: #DFF6FF;
+    background-color: #000;
+}
+
+/* Signup Section */
+
+.signup{
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.6rem;
+    font-weight:200;
+    height: 400px;
+    text-align: left;
+    display: none;
+}
+
+.signup label{
+    margin-left: 10px;
+}
+
+.signup input{
+    border-radius: 5px;
+    margin: 13px 10px;
+    width: 55%;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    border: none;   
+}
+
+#fname{
+    width: 25%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#lname{
+    width: 25%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#nusername{
+    width: 35%;
+}
+
+#useremail{
+    width: 65%;
+    margin-left: 70px;
+}
+
+#npassword{
+    width: 35%;
+    margin-left: 20px;
+}
+
+.signup #signup-btn{
+    margin-top: 20px;
+    margin-left: 275px;
+    width: 30%;
+    border: none;
+    cursor: pointer;
+    background-color: #DFF6FF;
+    color: #051367;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 2px;
+}
+
+.signup #signup-btn:hover{
     color: #DFF6FF;
     background-color: #000;
 }

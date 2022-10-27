@@ -34,11 +34,31 @@
                 <p class="password-alert">Password must contain alphabets and numbers and should be between 8-16 characters</p>
                 <input type="password" id="password" placeholder="Password" required>
                 <br>
-                <a href="#">Not a User? Sign Up</a>
+                <a href="#" class="sec-link">Not a User? Sign Up</a>
                 <br>
                 <input type="submit" value="login" id="login-btn">
             </form>
-            
+            <form action="#" class="signup">
+                <label for="fname">First Name: </label>
+                <input type="text" placeholder="First Name" id="fname" required>
+                <label for="lname">Last Name: </label>
+                <input type="text" placeholder="Last Name" id="lname" required>
+                <br>
+                <p class="username-alert">Username must contain alphabets and numbers and should not exceed 15 characters</p>
+                <label for="username">UserName: </label>
+                <input type="text" id="nusername" placeholder="Username" required>
+                <br>
+                <label for="email">Email: </label>
+                <input type="email" id="useremail" placeholder="Email ID" required>
+                <br>
+                <p class="password-alert">Password must contain alphabets and numbers and should be between 8-16 characters</p>
+                <label for="password">Password: </label>
+                <input type="password" id="npassword" placeholder="Password" required>
+                <br>
+                <a href="#" class="sec-link">Already a User? Log In</a>
+                <br>
+                <input type="button" value="signup" id="signup-btn">
+            </form>
         </div>
     </div>
     <script src="Javascript/login.js"></script>
