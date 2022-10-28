@@ -200,6 +200,12 @@ nav{
     margin-left: 20px;
 }
 
+.email-alert{
+    font-size: 15px;
+    color: red;
+    display: none;
+}
+
 .signup #signup-btn{
     margin-top: 20px;
     margin-left: 275px;

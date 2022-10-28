@@ -23,7 +23,7 @@
             <div class="showcase">
                 <img src="Images/caraousel1.jpg" alt="Caraousel" id="slider">
             </div>
-            <form action="#" method="post" class="login" onsubmit="return loginValid();">
+            <form action="#" class="login" onsubmit="return loginValid();">
                 <label for="Username">UserName: </label>
                 <br>
                 <p class="username-alert">Username must contain alphabets and numbers and should not exceed 15 characters</p>
@@ -38,7 +38,7 @@
                 <br>
                 <input type="submit" value="login" id="login-btn">
             </form>
-            <form action="#" class="signup">
+            <form action="#" class="signup" onsubmit="return signupValidation();">
                 <label for="fname">First Name: </label>
                 <input type="text" placeholder="First Name" id="fname" required>
                 <label for="lname">Last Name: </label>
@@ -48,8 +48,9 @@
                 <label for="username">UserName: </label>
                 <input type="text" id="nusername" placeholder="Username" required>
                 <br>
+                <p class="email-alert">Please enter valid Email ID</p>
                 <label for="email">Email: </label>
-                <input type="email" id="useremail" placeholder="Email ID" required>
+                <input type="text" id="useremail" placeholder="Email ID" required>
                 <br>
                 <p class="password-alert">Password must contain alphabets and numbers and should be between 8-16 characters</p>
                 <label for="password">Password: </label>
@@ -57,7 +58,7 @@
                 <br>
                 <p id="signup-link" class="sec-link">Already a User? Log In</p>
                 <br>
-                <input type="button" value="signup" id="signup-btn">
+                <input type="submit" value="signup" id="signup-btn">
             </form>
         </div>
     </div>
