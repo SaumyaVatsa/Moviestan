@@ -1,3 +1,7 @@
+// Objects
+let loginfrm = document.getElementsByClassName("login")
+let signupfrm = document.getElementsByClassName("signup")
+
 // Image Slider
 let interval = setInterval(function(){slideShow()},1500)
 let x=1
@@ -49,10 +53,8 @@ function passwordValid(upass,mx,mi){
 }
 
 function loginValid(){
-    let loginfrm = document.getElementsByClassName("login")
     let uname = document.getElementById("username")
     let upass = document.getElementById("password")
-
     if(usernameValid(uname)){
         if(passwordValid(upass,16,8)){
             loginfrm.submit()
@@ -60,3 +62,18 @@ function loginValid(){
     }
 
 }
+
+// Changing Section (login - signup)
+let loginToSignup = document.getElementById("login-link")
+let signupToLogin = document.getElementById("signup-link")
+
+loginToSignup.addEventListener("click",function (){
+    loginfrm[0].style.display="none"
+    signupfrm[0].style.display="block"
+})
+
+signupToLogin.addEventListener("click",function(){
+    signupfrm[0].style.display="none"
+    loginfrm[0].style.display ="block"
+})
+

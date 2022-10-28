@@ -83,6 +83,7 @@ nav{
     font-weight:200;
     height: 400px;
     text-align: left;
+    display: block;
 }
 
 .login label{
@@ -112,6 +113,8 @@ nav{
 }
 
 .sec-link{
+    cursor: pointer;
+    display: inline;
     margin-left: 10px;
     color: #000;
     font-size: 20px;
