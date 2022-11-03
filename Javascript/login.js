@@ -4,6 +4,7 @@ let signupfrm = document.getElementsByClassName("signup")
 let userAlert = document.getElementsByClassName("username-alert")
 let passAlert = document.getElementsByClassName("password-alert")
 let emailAlert = document.getElementsByClassName("email-alert")
+let reviewTest = document.getElementsByClassName("reviews")
 
 // Image Slider
 let interval = setInterval(function(){slideShow()},1500)
@@ -154,3 +155,37 @@ function newPassValid(npassword,mx,mi){
         return false
     }
 }
+
+// Testimonial Carousels
+let s = 0
+let b = 3
+let leftBtn = document.getElementsByClassName("left-btn")
+let rightBtn = document.getElementsByClassName("right-btn")
+
+leftBtn[0].addEventListener("click",function(){
+    if(b>=0){
+        reviewTest[s].style.display="none"
+        reviewTest[b].style.display="flex"
+        s=b
+        b--
+        if(b==-1){
+            b =3
+        }
+    }
+})
+
+rightBtn[0].addEventListener("click",function(){
+    if(s<=3){
+        reviewTest[s].style.display="none"
+        b=s+1
+        if(b==4){
+            reviewTest[0].style.display="flex"
+        }else{
+            reviewTest[b].style.display="flex"
+        }
+        s++
+        if(s==4){
+            s=0
+        }
+    }
+})
