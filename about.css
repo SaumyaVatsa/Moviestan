@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+hr{
+    height: 2px;
+    margin-top: 10px;
+    background-color: #DFF6FF;
+    border: none;
+    width: 120%;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #051367;
+    color: #fff;
+}
+
+.container{
+    width: 97%;
+    margin: auto;
+    text-align: center;
+}
+
+/* NavBar */
+
+nav{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.logo{
+    cursor: pointer;
+    color: #DFF6FF;
+    font-size: 3rem;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li{
+    padding: 0 30px;
+}
+
+.menu li a{
+    padding-bottom: 2px;
+}
+
+.menu li a:hover{
+    color: #DFF6FF;
+    border-bottom: 2px solid #DFF6FF;
+}
+
+
+/* Content */
+.content{
+    width: 80%;
+    margin: 20px 20px;
+    padding: 10px;
+}
+
+.heading{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    margin-left: 20%;
+}
+
+.heading h2{
+    text-align: center;
+    margin-left: 70px;
+}
+
+.content p{
+    text-align: left;
+    margin: 20px 0;
+    margin-left: 20%;
+}
+
+footer{
+    position:absolute;
+    width: 100%;
+    background-color: #DFF6FF;
+    color: #051367;
+    margin-top: 40px;
+    padding: 20px;
+    left: 0;
+    height: 200px;
+}
+
+.social-handles{
+    position: absolute;
+    padding: 10px;
+}
+
+.social-handles a img{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
+
+footer p{
+    font-size: 1.2rem;
+    margin-top: 135px;
+    font-weight: bold;
+    text-align: center;
+}
