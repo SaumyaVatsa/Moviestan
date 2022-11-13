@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kannada Movies</title>
+    <link rel="stylesheet" href="moviePage.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Nav -->
+      <nav>
+        <h2 class="logo">Moviestan</h2>
+        <ul class="menu">
+          <li><a href="D:\Semester 3\Web Develpoment\Project\index.html">Home</a></li>
+          <li><a href="D:\Semester 3\Web Develpoment\Project\login.html">logout</a></li>
+        </ul>
+      </nav>
+
+      <!-- Image Slider -->
+      <div class="showcase">
+        <img src="kannada/kgf-poster-slider.jpeg" alt="" id="slider" />
+      </div>
+
+      <!-- Movie List -->
+      <div class="genre-container">
+        <hr />
+        <h2 class="genre-name">Kannada Movies</h2>
+        <hr />
+      </div>
+
+      <div class="movielist">
+        <h3 class="movielist-heading">Action / Thriller</h3>
+        <div>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="kannada/kgf.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="kannada/rangitarang.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="kannada/Ugramm.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="kannada/jogi the king.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="kannada/U turn.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="kannada/tagadu.jpg" alt="" /></a>
+        </div>
+        <div>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="kannada/Navasgarha.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="kannada/babruvahana.jpg" alt="" /></a>
+        </div>
+      </div>
+
+      <div class="movielist">
+        <h3 class="movielist-heading">Comedy</h3>
+        <div>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="kannada/mungru male.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="kannada/kirik.jpg" alt="" /></a>
+        </div>
+      </div>
+
+      <div class="movielist">
+        <h3 class="movielist-heading">Drama</h3>
+        <div>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="kannada/uldivaru.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="kannada/lucia.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="kannada/thithi.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="kannada/sarkari.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="kannada/godhi banna.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="kannada/upendra.jpg" alt="" /></a>
+        </div>
+        <div>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="kannada/bhakta.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="kannada/Amrutha.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="kannada/rama rama re.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="kannada/shri  krishna deva raya.jpg" alt="" /></a>
+        </div>
+      </div>
+      
+      <!-- footer -->
+      <footer>
+        <p>Moviestan, Copyright &copy; 2022</p>
+      </footer>
+    </div>
+    <script>
+      let interval = setInterval(function () {
+        slideShow();
+      }, 1500);
+      let x = 1;
+
+      function slideShow() {
+        let images = [
+          "kgf-poster-slider.jpeg",
+          "ugramm-poster-slider.jpg",
+          "kgf2-poster-slider.jpg"
+        ];
+        let sliderObj = document.getElementById("slider");
+        if (x < 4) {
+          let imgSrc = "kannada/" + images[x];
+          sliderObj.src = imgSrc;
+          x++;
+          if (x == 3) {
+            x = 0;
+          }
+        }
+      }
+    </script>
+  </body>
+</hKannada

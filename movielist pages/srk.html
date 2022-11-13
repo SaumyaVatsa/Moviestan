@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shah Ruh Khan Movies</title>
+    <link rel="stylesheet" href="moviePage.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Nav -->
+      <nav>
+        <h2 class="logo">Moviestan</h2>
+        <ul class="menu">
+          <li><a href="D:\Semester 3\Web Develpoment\Project\index.html">Home</a></li>
+          <li><a href="D:\Semester 3\Web Develpoment\Project\login.html">logout</a></li>
+        </ul>
+      </nav>
+
+      <!-- Image Slider -->
+      <div class="showcase">
+        <img src="srk/chak-poster-slider.jpeg" alt="" id="slider" />
+      </div>
+
+      <!-- Movie List -->
+      <div class="genre-container">
+        <hr />
+        <h2 class="genre-name">Shah Ruh Khan Movies</h2>
+        <hr />
+      </div>
+
+      <div class="movielist">
+        <div>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="action/bollywood/darr.png" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="action/bollywood/raone.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="comedy/bollywood/diltopagalhai.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="comedy/bollywood/kabhihaakabhinaa.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="comedy/bollywood/kalhonaaho.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="comedy/bollywood/kuchkuchhotahai.jpg" alt="" /></a>
+        </div>
+        <div>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="comedy/bollywood/Om shanti om.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="comedy/bollywood/rabnebanadijodi.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="comedy/bollywood/rajubangayagentelman.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="comedy/bollywood/yess boss.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="drama/baazigar.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="drama/chak de inida.jpg" alt="" /></a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="drama/chalte chalte.jpg" alt="" /></a>
+            <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="drama/ddlj.jpg" alt="" /></a>
+            <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="drama/kabhi alvida na kehna.jpg" alt="" /></a>
+            <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="drama/mohabbatein.jpg" alt="" /></a>
+            <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="drama/my name is khan.jpg" alt="" /></a>
+            <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="drama/pardes.jpg" alt="" /></a>
+          </div>
+          <div>
+            <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="drama/veer zaara.jpg" alt="" /></a>
+            <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="drama/swades.jpg" alt="" /></a>
+          </div>
+      </div>
+
+      <!-- footer -->
+      <footer>
+        <p>Moviestan, Copyright &copy; 2022</p>
+      </footer>
+    </div>
+    <script>
+      let interval = setInterval(function () {
+        slideShow();
+      }, 1500);
+      let x = 1;
+
+      function slideShow() {
+        let images = [
+          "chak-poster-slider.jpeg",
+          "darr-poster-slider.jpg",
+          "omshantiom-poster-slider.jpg"
+        ];
+        let sliderObj = document.getElementById("slider");
+        if (x < 4) {
+          let imgSrc = "srk/" + images[x];
+          sliderObj.src = imgSrc;
+          x++;
+          if (x == 3) {
+            x = 0;
+          }
+        }
+      }
+    </script>
+  </body>
+</hShah Ruh Khan

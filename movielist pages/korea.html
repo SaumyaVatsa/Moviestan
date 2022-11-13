@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Korean Movies</title>
+    <link rel="stylesheet" href="moviePage.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Nav -->
+      <nav>
+        <h2 class="logo">Moviestan</h2>
+        <ul class="menu">
+          <li><a href="D:\Semester 3\Web Develpoment\Project\index.html">Home</a></li>
+          <li><a href="D:\Semester 3\Web Develpoment\Project\login.html">logout</a></li>
+        </ul>
+      </nav>
+
+      <!-- Image Slider -->
+      <div class="showcase">
+        <img src="korea/49days-poster-slider.jpg.crdownload" alt="" id="slider" />
+      </div>
+
+      <!-- Movie List -->
+      <div class="genre-container">
+        <hr />
+        <h2 class="genre-name">Korean Movies</h2>
+        <hr />
+      </div>
+
+      <div class="movielist">
+        <div>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="korea/49 days.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="korea/descendants.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="korea/familiear wife.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="korea/fight for my way.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="korea/ghost.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="korea/guardian.jpg" alt="" /></a>
+        </div>
+        <div>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="korea/its okay.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="korea/kill me, heal me.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="korea/my love another star.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="korea/save as picture.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="korea/secret  garden.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="korea/W.jpg" alt="" /></a>
+        </div>
+        <div>
+            <a href=""><img src="korea/while you were sleeping.jpg" alt="" /></a>
+        </div>
+      </div>
+      
+      <!-- footer -->
+      <footer>
+        <p>Moviestan, Copyright &copy; 2022</p>
+      </footer>
+    </div>
+    <script>
+      let interval = setInterval(function () {
+        slideShow();
+      }, 1500);
+      let x = 1;
+
+      function slideShow() {
+        let images = [
+          "49days-poster-slider.jpg.crdownload",
+          "defendant-poster-slider.jpg",
+          "kill-poster-slider.jpeg"
+        ];
+        let sliderObj = document.getElementById("slider");
+        if (x < 4) {
+          let imgSrc = "korea/" + images[x];
+          sliderObj.src = imgSrc;
+          x++;
+          if (x == 3) {
+            x = 0;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BollyWood Movies</title>
+    <link rel="stylesheet" href="moviePage.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Nav -->
+      <nav>
+        <h2 class="logo">Moviestan</h2>
+        <ul class="menu">
+          <li><a href="D:\Semester 3\Web Develpoment\Project\index.html">Home</a></li>
+          <li><a href="D:\Semester 3\Web Develpoment\Project\login.html">logout</a></li>
+        </ul>
+      </nav>
+
+      <!-- Image Slider -->
+      <div class="showcase">
+        <img src="hindi/amarakbaranthony-poster-slider.jpg" alt="" id="slider" />
+      </div>
+
+      <!-- Movie List -->
+      <div class="genre-container">
+        <hr />
+        <h2 class="genre-name">BollyWood Movies</h2>
+        <hr />
+      </div>
+
+      <div class="movielist">
+        <h3 class="movielist-heading">Action</h3>
+        <div>
+          <a href=""><img src="action/bollywood/agneepath.png" alt="" /></a>
+          <a href=""><img src="action/bollywood/coolie.png" alt="" /></a>
+          <a href=""><img src="action/bollywood/darr.png" alt="" /></a>
+          <a href=""><img src="action/bollywood/deewar.png" alt="" /></a>
+          <a href=""><img src="action/bollywood/don.png" alt="" /></a>
+          <a href=""><img src="action/bollywood/mard.png" alt="" /></a>
+        </div>
+        <div>
+          <a href=""><img src="action/bollywood/naseeb.png" alt="" /></a>
+          <a href=""><img src="action/bollywood/raone.jpg" alt="" /></a>
+          <a href=""><img src="action/bollywood/shaan.png" alt="" /></a>
+          <a href=""><img src="action/bollywood/shakti.png" alt="" /></a>
+          <a href=""><img src="action/bollywood/sholay.png" alt="" /></a>
+          <a href=""><img src="action/bollywood/zanjeer.png" alt="" /></a>
+        </div>
+      </div>
+
+      <div class="movielist">
+        <h3 class="movielist-heading">Comedy</h3>
+        <div>
+          <a href=""><img src="comedy/bollywood/amarakabr.jpg" alt="" /></a>
+          <a href=""><img src="comedy/bollywood/diltopagalhai.jpg" alt="" /></a>
+          <a href=""><img src="comedy/bollywood/kabhihaakabhinaa.jpg" alt="" /></a>
+          <a href=""><img src="comedy/bollywood/kalhonaaho.jpg" alt="" /></a>
+          <a href=""><img src="comedy/bollywood/kuchkuchhotahai.jpg" alt="" /></a>
+          <a href=""><img src="comedy/bollywood/Om shanti om.jpg" alt="" /></a>
+        </div>
+        <div>
+          <a href=""><img src="comedy/bollywood/rabnebanadijodi.jpg" alt="" /></a>
+          <a href=""><img src="comedy/bollywood/rajubangayagentelman.jpg" alt="" /></a>
+          <a href=""><img src="comedy/bollywood/sattepesatta.jpg" alt="" /></a>
+          <a href=""><img src="comedy/bollywood/yaarana.jpg" alt="" /></a>
+          <a href=""><img src="comedy/bollywood/yess boss.jpg" alt="" /></a>
+        </div>
+      </div>
+
+      <div class="movielist">
+        <h3 class="movielist-heading">Drama</h3>
+        <div>
+          <a href=""><img src="drama/baazigar.jpg" alt="" /></a>
+          <a href=""><img src="drama/chak de inida.jpg" alt="" /></a>
+          <a href=""><img src="drama/chalte chalte.jpg" alt="" /></a>
+          <a href=""><img src="drama/ddlj.jpg" alt="" /></a>
+          <a href=""><img src="drama/kabhi alvida na kehna.jpg" alt="" /></a>
+          <a href=""><img src="drama/mohabbatein.jpg" alt="" /></a>
+        </div>
+        <div>
+          <a href=""><img src="drama/my name is khan.jpg" alt="" /></a>
+          <a href=""><img src="drama/pardes.jpg" alt="" /></a>
+          <a href=""><img src="drama/parvarish.jpg" alt="" /></a>
+          <a href=""><img src="drama/silsila.jpg" alt="" /></a>
+          <a href=""><img src="drama/suhaag.jpg" alt="" /></a>
+          <a href=""><img src="drama/swades.jpg" alt=""></a>
+        </div>
+        <div>
+            <a href=""><img src="drama/veer zaara.jpg" alt=""></a>
+        </div>
+      </div>
+      
+      <!-- footer -->
+      <footer>
+        <p>Moviestan, Copyright &copy; 2022</p>
+      </footer>
+    </div>
+    <script>
+      let interval = setInterval(function () {
+        slideShow();
+      }, 1500);
+      let x = 1;
+
+      function slideShow() {
+        let images = [
+          "amarakbaranthony-poster-slider.jpeg",
+          "darr-poster-slider.jpg",
+          "omshantiom-poster-slider.jpg",
+          "phirherapheri-poster-slider.jpeg",
+          "sholay-poster-slider.jpg",
+        ];
+        let sliderObj = document.getElementById("slider");
+        if (x < 6) {
+          let imgSrc = "hindi/" + images[x];
+          sliderObj.src = imgSrc;
+          x++;
+          if (x == 5) {
+            x = 0;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SciFi Movies</title>
+    <link rel="stylesheet" href="moviePage.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Nav -->
+      <nav>
+        <h2 class="logo">Moviestan</h2>
+        <ul class="menu">
+          <li><a href="D:\Semester 3\Web Develpoment\Project\index.html">Home</a></li>
+          <li><a href="D:\Semester 3\Web Develpoment\Project\login.html">logout</a></li>
+        </ul>
+      </nav>
+
+      <!-- Image Slider -->
+      <div class="showcase">
+        <img src="scifi/avatar-poster-slider.jpeg" alt="" id="slider" />
+      </div>
+
+      <!-- Movie List -->
+      <div class="genre-container">
+        <hr />
+        <h2 class="genre-name">Science Fiction Movies</h2>
+        <hr />
+      </div>
+
+      <div class="movielist">
+        <div>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/ad astra.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/another earth.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/arrival.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/avatar.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/blade runner.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/cloud atlas.jpg" alt="" /></a>
+        </div>
+        <div>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/dawn of the planet apes.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/district 9.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/dune.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/Everything everywhere all at once.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/I am legend.jpg" alt="" /></a>
+          <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/I origin.jpg" alt="" /></a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/i robot.jpg" alt="" /></a>
+            <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/inception.jpg" alt="" /></a>
+            <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/independence day.jpg" alt="" /></a>
+            <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/interstellar.jpg" alt="" /></a>
+            <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/man from earth.jpg" alt="" /></a>
+            <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/rise of the planet apes.jpg" alt="" /></a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/source code.jpg" alt="" /></a>
+            <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/tenet.jpg" alt="" /></a>
+            <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/the prestige.jpg" alt="" /></a>
+            <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/under the skin.jpg" alt="" /></a>
+            <a href="https://www.youtube.com/watch?v=AZGcmvrTX9M"><img src="scifi/war of the planet apes.jpg" alt="" /></a>
+        </div>
+      </div>
+      
+      <!-- footer -->
+      <footer>
+        <p>Moviestan, Copyright &copy; 2022</p>
+      </footer>
+    </div>
+    <script>
+      let interval = setInterval(function () {
+        slideShow();
+      }, 1500);
+      let x = 1;
+
+      function slideShow() {
+        let images = [
+          "avatar-poster-slider.jpeg",
+          "inception-poster-slider.jpg",
+          "interstellar-poster-slider.jpg",
+          "source-poster-slider.jpeg",
+          "tenet-poster-slider.jpg",
+        ];
+        let sliderObj = document.getElementById("slider");
+        if (x < 6) {
+          let imgSrc = "scifi/" + images[x];
+          sliderObj.src = imgSrc;
+          x++;
+          if (x == 5) {
+            x = 0;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
