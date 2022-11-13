@@ -23,7 +23,6 @@ function slideShow(){
     }
 }
 
-
 // Login Form
 function loginValid(){
     let uname = document.getElementById("username")
