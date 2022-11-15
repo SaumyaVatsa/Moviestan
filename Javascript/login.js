@@ -6,6 +6,9 @@ let passAlert = document.getElementsByClassName("password-alert")
 let emailAlert = document.getElementsByClassName("email-alert")
 let reviewTest = document.getElementsByClassName("reviews")
 
+let userNames = ["saumya12","ankit23"];
+let pass = ["webdevelopment"];
+
 // Image Slider
 let interval = setInterval(function(){slideShow()},1500)
 let x=1
@@ -29,10 +32,11 @@ function loginValid(){
     let upass = document.getElementById("password")
     if(usernameValid(uname)){
         if(passwordValid(upass,16,8)){
-            loginfrm.submit()
+            loginfrm[0].setAttribute("action","index.html")
+            loginfrm[0].submit()
         }
     }
-    loginfrm.reset()
+    loginfrm[0].reset()
 }
 
 // Changing Section (login - signup)
@@ -62,13 +66,14 @@ function signupValidation(){
             if(newUserValid(nUsername)){
                 if(emailValid(uemail)){
                     if(newPassValid(nPassword,16,8)){
-                        signupfrm.submit()
+                        signupfrm[0].setAttribute("action","login.html")
+                        signupfrm[0].submit()
                     }
                 }
             }
         }
     }
-    signupfrm.reset()
+    signupfrm[0].reset()
 }
 
 // Validation Functions
@@ -76,7 +81,13 @@ function usernameValid(uname){
     let pattern = /^[A-Za-z0-9]+$/
     if(uname.value.match(pattern)){
         userAlert[0].style.display="none"
-        return true
+        for(i=0;i<userNames.length;i++){
+            if(uname.value.match(userNames[i])){
+                return true
+            }
+        }
+        alert("User Does Not Exist")
+        return false
     }else{
         userAlert[0].style.display="block"
         uname.focus()
@@ -89,7 +100,13 @@ function passwordValid(upass,mx,mi){
     if(upass.value.length >= mi && upass.value.length <=mx){
         if(upass.value.match(pattern)){
             passAlert[0].style.display = "none"
-            return true
+            for(i=0;i<pass.length;i++){
+                if(upass.value.match(pass[i])){
+                    return true
+                }
+            }
+            alert("Incorrect password")
+            return false
         }else{
             passAlert[0].style.display = "block"
             upass.focus()
@@ -127,8 +144,10 @@ function emailValid(uemail){
 
 function newUserValid(nusername){
     let pattern=/^[A-Za-z0-9]+$/
+    let nuser = nusername.value
     if(nusername.value.match(pattern)){
         userAlert[1].style.display = "none"
+        userNames[(userNames.length)+1] = nuser
         return true
     }else{
         userAlert[1].style.display="block"

@@ -416,3 +416,70 @@ footer p{
     font-weight: bold;
     text-align: center;
 }
+
+@media(max-width: 700px){
+    .showcase{
+        display: none;
+    }
+    .login-showcase{
+        display: block;
+    }
+
+    .login #login-btn{
+        margin-left: 165px;
+    }
+
+    .signup{
+        font-size: 1.3rem;
+    }
+
+    .signup input{
+        margin: 10px 7px;
+        width: 50%;
+        height: 40px;
+    }
+
+    #useremail{
+        margin-left: 50px;
+    }
+
+
+    #npassword{
+        margin-left: 10px;
+    }
+
+    .signup #signup-btn{
+        margin-left: 200px;
+    }
+
+    .testimonial{
+        display: none;
+    }
+
+    .arrow-fi,.arrow-se{
+        display: none;
+    }
+
+    .site-summary{
+        display: block;
+        margin:40px 10px;
+    }
+
+    .login-card p{
+        margin-left: 165px;
+    }
+
+    .search-card p{
+        margin-left: 180px;
+    }
+
+    footer{
+        width: 625px;
+        
+    }
+
+    .developers{
+        left: 70%;
+        bottom: 45%;
+    }
+}

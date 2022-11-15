@@ -24,7 +24,7 @@
             <div class="showcase">
                 <img src="Images/caraousel1.jpg" alt="Caraousel" id="slider">
             </div>
-            <form action="index.html" class="login" onsubmit="return loginValid();">
+            <form class="login" onsubmit="loginValid()">
                 <label for="Username">UserName: </label>
                 <br>
                 <p class="username-alert">Username must contain alphabets and numbers and should not exceed 15 characters</p>
@@ -39,7 +39,7 @@
                 <br>
                 <input type="submit" value="login" id="login-btn">
             </form>
-            <form action="index.html" class="signup" onsubmit="return signupValidation();">
+            <form class="signup" onsubmit="signupValidation()">
                 <label for="fname">First Name: </label>
                 <input type="text" placeholder="First Name" id="fname" required>
                 <label for="lname">Last Name: </label>
@@ -59,7 +59,7 @@
                 <br>
                 <p id="signup-link" class="sec-link">Already a User? Log In</p>
                 <br>
-                <a href="index.html"><input type="submit" value="signup" id="signup-btn"></a>
+                <input type="submit" value="signup" id="signup-btn">
             </form>
         </div>
         <!--Site Summary-->
